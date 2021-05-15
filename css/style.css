@@ -52,6 +52,11 @@ body {
 }
 
 /*=========================HEADER=======================*/
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .logo {
   font-family: var(--logo-font);
   font-weight: 700;
@@ -63,6 +68,28 @@ body {
 
 .logo-color {
   color: #000000;
+}
+
+.site-nav-list {
+  display: flex;
+  align-items: center;
+}
+.page-header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.auth-nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 93px;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .site-nav-link {
@@ -85,6 +112,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--link-nav);
 }
+
 .auth-nav-mail-link:hover,
 .auth-nav-mail-link:focus {
   color: var(--accent-color);
@@ -95,6 +123,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--link-nav);
+  margin-left: 40px;
 }
 
 .auth-nav-tel-link:hover,
@@ -104,9 +133,15 @@ body {
 /*=========================END HEADER=================*/
 
 /*========================HERO=======================*/
-.hero {
+.page-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.hero-menu {
   background: #2f303a;
 }
+
 .hero-menu-title {
   font-weight: 900;
   font-size: 44px;
