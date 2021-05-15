@@ -8,12 +8,41 @@
   --navlink: #212121;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 body {
@@ -82,14 +111,14 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .hero-menu-modal-button {
-  font-family: var(--main-font);
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
@@ -122,7 +151,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16x;
-  text-align: center;
+
   color: var(--title);
 }
 /*========================END СЕКЦИЯ 2=====================*/
@@ -132,7 +161,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
+
   color: var(--title);
 }
 
@@ -197,7 +226,7 @@ body {
 
 /*==============================PORTFOLIO=====================*/
 .project-filter-button {
-  font-family: var(--main-font);
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
