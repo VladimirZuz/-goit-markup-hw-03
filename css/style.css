@@ -38,6 +38,11 @@ img {
   text-decoration: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -57,6 +62,12 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
+.page-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .logo {
   font-family: var(--logo-font);
   font-weight: 700;
@@ -133,9 +144,10 @@ body {
 /*=========================END HEADER=================*/
 
 /*========================HERO=======================*/
-.page-header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+.hero-menu {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-menu {
@@ -143,6 +155,7 @@ body {
 }
 
 .hero-menu-title {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -150,9 +163,17 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  text-transform: uppercase;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .hero-menu-modal-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -160,6 +181,9 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #188ce8;
+  cursor: pointer;
+
+  padding: 10px 32px;
 }
 
 .hero-menu-modal-button:hover {
@@ -168,36 +192,77 @@ body {
 /*========================END HERO=======================*/
 
 /*========================СЕКЦИЯ 2========================*/
+.feature-list {
+  display: flex;
+}
+
+.feature-list-menu:not(:last-child) {
+  margin-right: 30px;
+}
+
 .sup-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title);
+  margin-bottom: 10px;
 }
 
-.Feature-discription {
+.feature-discription {
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.71;
   color: #757575;
 }
 
+/*========================END СЕКЦИЯ 2=====================*/
+
+/*=================CЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ================*/
+.job {
+  padding-bottom: 94px;
+}
 .job-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16x;
-
   color: var(--title);
+  text-align: center;
+
+  margin-bottom: 50px;
 }
-/*========================END СЕКЦИЯ 2=====================*/
+
+.job-menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+/*=================END CЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ============*/
 
 /*========================СЕКЦИЯ 3=========================*/
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-
+  text-align: center;
   color: var(--title);
+
+  margin-bottom: 50px;
+}
+
+.team-menu-list {
+  display: flex;
+  text-align: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team-menu-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.team-menu-img {
+  margin-bottom: 30px;
 }
 
 .team-sup-title {
@@ -205,6 +270,8 @@ body {
   font-size: 16px;
   line-height: 1.18;
   color: var(--title);
+
+  margin-bottom: 10px;
 }
 .team-discription {
   font-size: 16px;
@@ -216,15 +283,21 @@ body {
 /*=============================FOOTER=====================*/
 .footer {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo-color {
   color: #ffffff;
 }
+
+.address-font-style {
+  font-style: normal;
+}
+
 .footer-adres-item-link {
   font-size: 14px;
   line-height: 1.71;
-  font-style: normal;
   color: #ffffff;
 }
 
@@ -235,7 +308,6 @@ body {
 
 .footer-auth-nav-mail {
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -247,7 +319,6 @@ body {
 
 .footer-auth-nav-tel {
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -259,7 +330,12 @@ body {
 }
 /*=============================END FOOTER=====================*/
 
-/*==============================PORTFOLIO=====================*/
+/*==============================PORTFOLIO FILTER=====================*/
+.project-filter-button-list {
+  display: flex;
+  justify-content: center;
+}
+
 .project-filter-button {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -267,6 +343,10 @@ body {
   line-height: 1.62;
   color: #212121;
   background: #f5f4fa;
+  cursor: pointer;
+
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 
 .project-filter-button:hover,
@@ -288,8 +368,19 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/*==============================END PORTFOLIO FILTER==============*/
 
-/*==============================PORTFOLIO PROECT=================*/
+/*==============================PORTFOLIO PROJECT=================*/
+
+.portfolio-project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-project-item:not(:nth-last-child(-n + 3)) {
+  margin-right: 30px;
+}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
