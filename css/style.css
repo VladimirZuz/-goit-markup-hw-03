@@ -375,10 +375,14 @@ body {
 .portfolio-project-list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .portfolio-project-item {
-  flex-basis: calc(100% / 3);
+  flex-basis: calc(100% / 3 - 30);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .portfolio-title {
