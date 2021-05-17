@@ -377,11 +377,8 @@ body {
   flex-wrap: wrap;
 }
 
-.portfolio-project-item:not(:nth-last-child(-n + 3)) {
-  margin-right: 30px;
-}
-
 .portfolio-project-item {
+  flex-basis: calc(100% / 3);
 }
 
 .portfolio-title {
