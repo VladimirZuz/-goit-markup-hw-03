@@ -76,6 +76,8 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--link-button);
+
+  margin-right: 93px;
 }
 
 .logo-color {
@@ -94,10 +96,6 @@ body {
 .auth-nav-list {
   display: flex;
   align-items: center;
-}
-
-.logo {
-  margin-right: 93px;
 }
 
 .site-nav-item:not(:last-child) {
@@ -144,7 +142,7 @@ body {
 }
 /*=========================END HEADER=================*/
 
-/*========================HERO=======================*/
+/*===================СЕКЦИЯ-1 HERO=====================*/
 .hero-menu {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -190,9 +188,9 @@ body {
 .hero-menu-modal-button:hover {
   background-color: var(--accent-color);
 }
-/*========================END HERO=======================*/
+/*====================END СЕКЦИЯ-1 HERO===================*/
 
-/*========================СЕКЦИЯ 2========================*/
+/*===============СЕКЦИЯ-2 ВНИМАНИЕ К ДЕТАЛЯМ==============*/
 .feature-list {
   display: flex;
 }
@@ -216,9 +214,9 @@ body {
   color: #757575;
 }
 
-/*========================END СЕКЦИЯ 2=====================*/
+/*============END СЕКЦИЯ-2 ВНИМАНИЕ К ДЕТАЛЯМ===============*/
 
-/*=================CЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ================*/
+/*=================CЕКЦИЯ-3 ЧЕМ МЫ ЗАНИМАЕМСЯ================*/
 
 .job {
   padding-bottom: 94px;
@@ -237,9 +235,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
-/*=================END CЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ============*/
+/*=================END CЕКЦИЯ-3 ЧЕМ МЫ ЗАНИМАЕМСЯ============*/
 
-/*========================СЕКЦИЯ 3=========================*/
+/*================СЕКЦИЯ-4 НАША КОМАНДА=======================*/
 
 .team {
   background: #f5f4fa;
@@ -247,8 +245,8 @@ body {
 
 .card-content {
   background: #ffffff;
-  border: 1px solid #eeeeee;
-  padding: 30px 70px;
+  padding: 30px 20px;
+  border-radius: 4px;
 }
 .team-title {
   font-weight: 700;
@@ -271,10 +269,9 @@ body {
   flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 30px;
-}
-
-.team-menu-img {
-  margin-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-sup-title {
@@ -290,9 +287,9 @@ body {
   line-height: 1.18;
   color: #757575;
 }
-/*========================END СЕКЦИЯ 3=====================*/
+/*==============END СЕКЦИЯ-4 НАША КОМАНДА=================*/
 
-/*=============================FOOTER=====================*/
+/*========================FOOTER==========================*/
 .footer {
   background: #2f303a;
   padding-top: 60px;
@@ -301,7 +298,6 @@ body {
 
 .logo {
   display: flex;
-  margin-bottom: 20px;
 }
 .footer-logo-color {
   color: #ffffff;
@@ -309,6 +305,7 @@ body {
 
 .footer-adres-list {
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .footer-adres-item {
@@ -354,7 +351,7 @@ body {
 }
 /*=============================END FOOTER=====================*/
 
-/*==============================PORTFOLIO FILTER=====================*/
+/*=======================PORTFOLIO-1 FILTER===================*/
 .project-filter-button-list {
   display: flex;
   justify-content: center;
@@ -380,7 +377,7 @@ body {
   color: #ffffff;
   background: #2196f3;
 }
-
+/*-скрытый заголовок*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -394,9 +391,15 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/*==============================END PORTFOLIO FILTER==============*/
+/*======================END PORTFOLIO-1 FILTER==============*/
 
-/*==============================PORTFOLIO PROJECT=================*/
+/*======================PORTFOLIO-2 PROJECT=================*/
+.card-content-portfolio {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  padding: 20px 20px;
+  border: 1px solid #eeeeee;
+}
 
 .portfolio-project-list {
   display: flex;
@@ -423,6 +426,4 @@ body {
   line-height: 1.87;
   color: #757575;
 }
-/*==============================END PORTFOLIO PROECT==============*/
-
-/*==============================END PORTFOLIO=====================*/
+/*==============================END PORTFOLIO 2 PROECT==============*/
