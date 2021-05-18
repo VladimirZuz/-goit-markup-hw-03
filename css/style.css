@@ -170,9 +170,6 @@ body {
 }
 
 .hero-menu-modal-button {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -180,13 +177,17 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #188ce8;
+
   cursor: pointer;
+  border: 0px;
+  border-radius: 4px;
 
   padding: 10px 32px;
 }
 
 .hero-menu-modal-button:hover {
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /*====================END СЕКЦИЯ-1 HERO===================*/
 
@@ -217,7 +218,6 @@ body {
 /*============END СЕКЦИЯ-2 ВНИМАНИЕ К ДЕТАЛЯМ===============*/
 
 /*=================CЕКЦИЯ-3 ЧЕМ МЫ ЗАНИМАЕМСЯ================*/
-
 .job {
   padding-bottom: 94px;
 }
@@ -238,7 +238,6 @@ body {
 /*=================END CЕКЦИЯ-3 ЧЕМ МЫ ЗАНИМАЕМСЯ============*/
 
 /*================СЕКЦИЯ-4 НАША КОМАНДА=======================*/
-
 .team {
   background: #f5f4fa;
 }
