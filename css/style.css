@@ -363,10 +363,9 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  color: #212121;
   background: #f5f4fa;
   cursor: pointer;
-
+  border: 0px;
   padding: 6px 22px;
   border-radius: 4px;
   margin-right: 8px;
